@@ -1,0 +1,83 @@
+body{
+  background-color: navy;
+    
+}
+.container{
+    max-width: 900px;
+    max-height: auto;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    border-radius:2rem;
+    color: black;
+}
+h1{
+    padding: 4px;
+}
+ul{
+    padding-bottom: 20px;
+}
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px ;
+    user-select: none;
+    cursor: pointer;
+    background-color: lightgray;
+    color: black;
+    position: relative;
+    margin: 4px 0;
+    border-radius: 50px;
+}
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(Gallery/unchecked-box.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+
+}
+.list-group-item.completed{
+    text-decoration:line-through;
+    background-color: #dcdcdc;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(Gallery/Checked.png);
+}
+
+.btn{
+    float: right;
+    margin: auto 10px;
+    
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background-color: #edeef0;
+}
+@media screen and (max-width:768px) {
+    .container{
+        margin: auto;
+        max-width: 80%;
+        height: 90vh;
+    }
+    
+}

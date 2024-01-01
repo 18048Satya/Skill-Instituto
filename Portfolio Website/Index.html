@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg  bg-primary fixed-top">
+        <a class="navbar-brand" href="#"><img src="Gallery/logo.png" width="50px" height="50px"></a>
+        <button class="navbar-toggler navbar-light " type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link px-lg-4 rounded" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-lg-4 rounded" href="#skill">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-lg-4 rounded" href="#portfolio">projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-lg-4 rounded" href="#service">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link px-lg-4 rounded" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero py-5">
+        <div class="hero-container py-5">
+            <div class="left">
+                <h1 class="introduction"><small>Hello , I'am</small> <span>Satya</span></h1>
+                <h6 class="introduction">Professional Web Developer</h6>
+                <button class="button rounded " onclick="openPopup()">Dowload Resume</button>
+            </div>
+            <div class="right">
+                <img src="Gallery/Image-hero.png" alt="image">
+            </div>
+        </div>
+        <div class="popup" id="popup"> 
+            <div><img src="Gallery/tick.png"></div>
+            <h6>Dowload Successful</h6>
+            <div><button onclick="closePopup()">ok</button></div>
+        </div>
+    </section>
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-heading">About Me</h2>
+            <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora, accusantium enim alias saepe
+                temporibus quaerat consequatur. Placeat sit officiis possimus commodi nostrum laudantium corporis,
+                beatae neque? Architecto repellat nisi corrupti dolor, facere enim obcaecati ut maiores sapiente
+                deserunt doloremque molestias voluptates necessitatibus tempora voluptate alias vero rem ratione odit.
+                Corrupti ducimus sapiente aperiam ab dolor dicta, quam ipsum eveniet quis rerum placeat quaerat, est
+                temporibus totam! Obcaecati, sint. Fuga dolorum aspernatur possimus. Nobis, sapiente! Quam ea ipsam
+                maiores veniam esse eaque odio praesentium, facere est, fugit ut, totam consectetur nihil amet nisi
+                incidunt debitis nulla! Veniam dolor dolores distinctio expedita, pariatur alias dolorum sit. Error
+                ipsam harum tempora, ipsa labore, vero ex, accusamus consectetur neque nemo laborum temporibus nesciunt
+                quibusdam!</p>
+        </div>
+    </section>
+    <section id="skill" class="skills">
+        <div class="container">
+            <h2 class="section-heading">My skills</h2>
+            <div class="skill-section">
+                <div class="skill-level">
+                    <img src="Gallery/Skills-1.png" alt="logo" width="30" height="24">
+                    <div class="level">
+                        <div class="levels-1">
+
+                        </div>
+                    </div>98%
+                </div>
+                <div class="skill-level">
+                    <img src="Gallery/Skills-2.png" alt="logo" width="30" height="24">
+                    <div class="level">
+                        <div class="levels-2">
+
+                        </div>
+                    </div>88%
+                </div>
+                <div class="skill-level">
+                    <img src="Gallery/Skills-3.png" alt="logo" width="30" height="24">
+                    <div class="level">
+                        <div class="levels-3">
+
+                        </div>
+                    </div>82%
+                </div>
+                <div class="skill-level">
+                    <img src="Gallery/Skills-4.png" alt="logo" width="30" height="24">
+                    <div class="level">
+                        <div class="levels-4">
+
+                        </div>
+
+                    </div>70%
+                </div>
+                <div class="skill-level">
+                    <img src="Gallery/Skills-5.png" alt="logo" width="30" height="24">
+                    <div class="level">
+                        <div class="levels-5">
+
+                        </div>
+                    </div>92%
+                </div>
+                <div class="skill-level">
+                    <img src="Gallery/Skills-6.png" alt="logo" width="30" height="24">
+                    <div class="level">
+                        <div class="levels-6">
+
+                        </div>
+                    </div>73%
+                </div>
+                <div class="skill-level">
+                    <img src="Gallery/Skills-7.png" alt="logo" width="30" height="24">
+                    <div class="level">
+                        <div class="levels-7">
+
+                        </div>
+                    </div>85%
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+    <section id="portfolio" class="section">
+        <div class="container"> 
+            <h2 class="section-heading">My Projects</h2>
+            <div class="first">
+                <div class="project-card">
+                    <img src="Gallery/Project-image-1.jpg" alt="Project 1">
+                    <h4>Weather App</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor magna at mauris commodo, et cursus ex convallis.</p>
+                    </div>
+                    <button class="show-more rounded">Show More</button>
+                </div>
+                <div class="project-card">
+                    <img src="Gallery/project-image-2.jpg" alt="Project 2">
+                    <h4>Netflix Clone </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor magna at mauris commodo, et cursus ex convallis.</p>
+                    </div>
+                    <button class="show-more rounded">Show More</button>
+                </div>
+                <div class="project-card">
+                    <img src="Gallery/project-image-3.jpg" alt="Project 3">
+                    <h4>CMS website</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor magna at mauris commodo, et cursus ex convallis.</p>
+                    </div>
+                    <button class="show-more rounded">Show More</button>
+                </div>
+            </div>
+            <div class="second">
+                <div class="project-card">
+                    <img src="Gallery/project-image-4.png" alt="Project 4">
+                    <h4>Chat website </h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor magna at mauris commodo, et cursus ex convallis.</p>
+                    </div>
+                    <button class="show-more rounded">Show More</button>
+                </div>
+                <div class="project-card">
+                    <img src="Gallery/project-image-5.png" alt="Project 5">
+                    <h4>ToDolist</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor magna at mauris commodo, et cursus ex convallis.</p>
+                    </div>
+                    <button class="show-more rounded">Show More</button>
+                </div>
+                <div class="project-card">
+                    <img src="Gallery/project-image-6.jpg" alt="Project 6">
+                    <h4>Music Website</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor magna at mauris commodo, et cursus ex convallis.</p>
+                    </div>
+                    <button class="show-more rounded">Show More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="service" class="services">
+        <h2 class="section-heading">My Services</h2>
+        <div class="container-services">
+            <div class="service-details">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h6>Website design</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="service-details">
+                <i class="fa-solid fa-file-code"></i>
+                <h6>App development</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="service-details rounded">
+                <i class="fa-solid fa-shield"></i>
+                <h6>Security</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="service-details rounded">
+                <i class="fa-solid fa-database"></i>
+                <h6>Data Analysis</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="service-details rounded">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h6>Marketing</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="service-details">
+                <i class="fa-solid fa-code-compare"></i>
+                <h6>Build and Deployment</h6>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-5">
+        <h2 class="section-heading">Contact Me</h2>
+        <div class="container-form">
+            <form action="submit.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit" class="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="social-icons">
+            <a href="#" class="icon"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <div class="container">
+            <p>&copy; 2023 Designed by P.V.D.S.Satya</p>
+        </div>
+    </footer>
+    <script src="portfolio.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

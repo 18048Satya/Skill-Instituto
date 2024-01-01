@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Blog</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand text-success" href="#">Travel Blog</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item px-lg-4">
+            <a class="nav-link rounded " aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link rounded" href="#about">About</a>
+          </li>
+          <li class="nav-item px-lg-4 dropdown">
+            <a class="nav-link  rounded dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">Travel Tips</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Hotel Bookings</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Shopping</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Flight Bookings</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Train bookings</a></li>
+            </ul>
+          </li>
+          <li class="nav-item px-lg-4 dropdown">
+            <a class="nav-link rounded dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Destinations
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Asia</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">America</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Africa</a></li>
+            </ul>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link rounded" href="#Contact">Contact Us</a>
+          </li>
+          <li class="nav-item px-lg-4">
+            <a class="nav-link rounded" href="#">Privacy policy</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <section class="Hero">
+    <div class="overlay"></div>
+    <div class="Hero-container">
+      <h1 class="slide-up">Explore Destinations</h1>
+      <p class="slide-up"><small>Embark on Epic Adventures and Create Timeless Memories</small></p>
+      <p class="slide-up"><small>please tag along</small></p>
+      <a class="btn btn-outline-light btn-lg slide-up" href="#">Start Exploring</a>
+    </div>
+  </section>
+  <section class="about" id="about">
+    <h1>About</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam libero consectetur laboriosam, magni quaerat,
+      optio eaque sunt esse qui molestiae necessitatibus fugiat omnis quod excepturi laudantium, nesciunt corporis
+      doloremque cupiditate deserunt. Ad voluptatem reiciendis dolor unde autem ea rem harum soluta sunt, saepe, non
+      eius labore est minima. Eos rerum accusamus ipsam neque ipsa id dolor voluptas dolores, voluptate soluta non iusto
+      facere eum consequuntur aperiam possimus veniam vitae labore sint, vel illum ducimus deserunt magnam. Voluptatem
+      natus dolore accusamus voluptatum sit nemo consequuntur quo quasi eum modi aliquid commodi, tempore quisquam
+      maiores quas cumque omnis. Perferendis, praesentium hic? Corporis exercitationem temporibus animi quidem dicta
+      fugit expedita, delectus sapiente laboriosam amet excepturi suscipit. Itaque ut voluptatum amet expedita velit
+      aspernatur et quod, labore repudiandae eligendi molestiae sunt quos libero tempora perferendis laboriosam aperiam
+      non ab. Quidem dolorem suscipit fugit! Voluptate eos dolore quia pariatur ipsa sapiente iure iusto maiores
+      corporis. Quam accusamus, voluptas voluptate asperiores reprehenderit sapiente obcaecati reiciendis consequuntur
+      illum rem possimus inventore eius repudiandae vero accusantium provident ducimus unde officia alias assumenda
+      nostrum autem modi molestias? Vitae quisquam voluptate temporibus iure quidem sint est earum molestias consectetur
+      perferendis nisi incidunt reiciendis amet necessitatibus, ipsum praesentium blanditiis eveniet! Corrupti!</p>
+  </section>
+  <section class="Recent_posts">
+    <h1>Recent posts</h1>
+    <div class="posts">
+      <div class="post">
+        <img class="img-post" src="Gallery/travel1.jpg">
+        <h3><small>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, explicabo!</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/travel6.jpg">
+        <h3><small>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, tenetur.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/travel3.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/travel10.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/travel4.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/hike.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/travel5.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/travel2.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/travel8.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/india1.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/india2.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/india3.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/india4.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/america1.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/america1.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/america2.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/america3.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+      <div class="post">
+        <img class="img-post" src="Gallery/travel7.jpg">
+        <h3><small>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis, nemo.</small></h3>
+        <a class="btn btn-outline-danger btn-small" href="#">Read More</a>
+      </div>
+    </div>
+      <a class="btn btn-primary mb-3 btn-lg" href="#" target="_blank">Load More</a>
+  </section>
+  <div class="subscribe-container">
+    <h2>Subscribe to Our Blog</h2>
+    <p>Stay updated with the latest Travling Tips and updates.</p>
+    <form action="#">
+      <input type="email" placeholder="Enter your email address" required>
+      <button class="subscribe-button" type="submit">Subscribe</button>
+    </form>
+  </div>
+  <section class="container my-5" id="Contact">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="text-success">Contact Us</h2>
+        <p>Feel free to get in touch with us. We are here to answer any questions you may have.</p>
+        <address>
+          <strong>Our Company</strong><br>
+          123 Main Street<br>
+          City, State 12345<br>
+          <abbr title="Phone">Phone:</abbr> (123) 456-7890
+        </address>
+      </div>
+      <div class="col-md-6">
+        <form>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" class="form-control" id="name" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Services</a>
+        <a href="#">Travel Guide</a>
+      </div>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <p>&copy; 2023 Travel Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

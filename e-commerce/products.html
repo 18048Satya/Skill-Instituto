@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200..900&display=swap">
+    <title>e-commerce</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top" style="background-color: #85929E;">
+        <div class="container-fluid" >
+          <a class="navbar-brand" href="#"><img src="Gellery/logo.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top"> Shop</a>
+          <div class="d-flex form" role="search" >
+            <input class="formcontrol " type="search" placeholder="Search" name="search" autocomplete="given">
+            <abbr title="search"><button class="button" type="submit"><img src="Gellery/search.png" width="24px"
+                  height="24px"></button></abbr>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav  me-auto mb-2 mb-lg-0">
+              <li class="nav-item px-4">
+                <a class="nav-link" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link" href="#shop">Shop</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link" href="#shop">About us</a>
+              </li>
+              <li class="nav-item px-4">
+                <a class="nav-link " href="#_self">
+                  products
+                </a>         
+              </li>         
+              <li class="nav-item px-4">
+                <a class="nav-link" href="#contact">Contact us</a>
+              </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link" onclick="display()" href="#cart"><span class="material-symbols-outlined">
+                    shopping_cart
+                    </span>
+                    </a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link" href="#">Customer Services</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a class="nav-link" href="index.html">logout
+                  </a>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Products code-->
+   <h2 class="px-4 me-2 sub-title">Latest mobiles</h2>
+    <div class="product-container">
+      <div class="product-card" id="1">
+          <img class="product-image" src="Gellery/mobiles/m-1.png" alt="mobile 1">
+          <div class="product-title">mobile 1</div>
+          <div class="product-price">₹19500</div>
+          <button class="btn btn-warning" onclick="addItemToCart('mobile-1', 19500, 'Gellery/mobiles/m-1.png')">Add to Cart</button>
+      </div>
+      <div class="product-card" id="2">
+          <img class="product-image" src="Gellery/mobiles/m-3.png" alt="mobile 2">
+          <div class="product-title">mobile 2</div>
+          <div class="product-price">₹12500</div>
+          <button class="btn btn-warning" onclick="addItemToCart('mobile-2', 12500, 'Gellery/mobiles/m-3.png')">Add to Cart</button>
+      </div>
+      <div class="product-card" id="3">
+        <img class="product-image" src="Gellery/mobiles/m-6.jpg" alt="mobile 3">
+        <div class="product-title">mobile 3</div>
+        <div class="product-price">₹15999</div>
+        <button class="btn btn-warning" onclick="addItemToCart('mobile-3', 15999, 'Gellery/mobiles/m-6.jpg')">Add to Cart</button>
+    </div>
+    <div class="product-card" id="4">
+      <img class="product-image" src="Gellery/mobiles/m-7.jpg" alt="mobile 4">
+      <div class="product-title">mobile 4</div>
+      <div class="product-price">₹20000</div>
+      <button class="btn btn-warning" onclick="addItemToCart('mobile-4', 20000, 'Gellery/mobiles/m-7.jpg')">Add to Cart</button>
+  </div>
+  <div class="product-card">
+    <img class="product-image" src="Gellery/mobiles/m-17.jpg" alt="mobile 5">
+    <div class="product-title">mobile 5</div>
+    <div class="product-price">₹16590</div>
+    <button class="btn btn-warning" onclick="addItemToCart('mobile-5', 16590, 'Gellery/mobiles/m-17.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="6">
+  <img class="product-image" src="Gellery/mobiles/m-18.jpg" alt="mobile 6">
+  <div class="product-title">mobile 6</div>
+  <div class="product-price">₹2300</div>
+  <button class="btn btn-warning" onclick="addItemToCart('mobile-6', 23500, 'Gellery/mobiles/m-18.jpg')">Add to Cart</button>
+</div>
+  <div class="product-card" id="7">
+    <img class="product-image" src="Gellery/mobiles/m-19.jpg" alt="mobile 7">
+    <div class="product-title">mobile 7</div>
+    <div class="product-price">₹11599</div>
+    <button class="btn btn-warning" onclick="addItemToCart('mobile-7', 11599, 'Gellery/mobiles/m-19.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="8">
+  <img class="product-image" src="Gellery/mobiles/m-20.jpg" alt="mobile 8">
+  <div class="product-title">mobile 8</div>
+  <div class="product-price">₹19500</div>
+  <button class="btn btn-warning" onclick="addItemToCart('mobile-8', 19500, 'Gellery/mobiles/m-20.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="9">
+  <img class="product-image" src="Gellery/mobiles/m-18.jpg" alt="mobile 9">
+  <div class="product-title">mobile 9</div>
+  <div class="product-price">₹18999</div>
+  <button class="btn btn-warning" onclick="addItemToCart('mobile-9', 18999, 'Gellery/mobiles/m-18.jpg')">Add to Cart</button>
+</div>
+  <div class="product-card" id="10">
+    <img class="product-image" src="Gellery/mobiles/m-8.jpg" alt="mobile 10">
+    <div class="product-title">mobile 10</div>
+    <div class="product-price">₹1699</div>
+    <button class="btn btn-warning" onclick="addItemToCart('mobile-10', 16999, 'Gellery/mobiles/m-8.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="11">
+  <img class="product-image" src="Gellery/mobiles/m-7.jpg" alt="mobile 11">
+  <div class="product-title">mobile 11</div>
+  <div class="product-price">₹20500</div>
+  <button class="btn btn-warning" onclick="addItemToCart('mobile-11', 20500, 'Gellery/mobiles/m-7.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="12">
+  <img class="product-image" src="Gellery/mobiles/m-6.jpg" alt="mobile 12">
+  <div class="product-title">mobile 12</div>
+  <div class="product-price">$21999</div>
+  <button class="btn btn-warning" onclick="addItemToCart('mobile-12', 21999, 'Gellery/mobiles/m-6.jpg')">Add to Cart</button>
+</div>
+  <div class="product-card" id="13">
+    <img class="product-image" src="Gellery/mobiles/m-5.png" alt="mobile 13">
+    <div class="product-title">mobile 13</div>
+    <div class="product-price">$19500</div>
+    <button class="btn btn-warning" onclick="addItemToCart('mobile-13', 19500, 'Gellery/mobiles/m-5.png')">Add to Cart</button>
+</div>
+<div class="product-card" id="14">
+  <img class="product-image" src="Gellery/mobiles/m-24.jpg" alt="mobile 14">
+  <div class="product-title">mobile 14</div>
+  <div class="product-price">₹19500</div>
+  <button class="btn btn-warning" onclick="addItemToCart('mobile-14', 19500, 'Gellery/mobiles/m-24.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="15">
+  <img class="product-image" src="Gellery/mobiles/m-3.png" alt="mobile 15">
+  <div class="product-title">mobile 15</div>
+  <div class="product-price">₹14599</div>
+  <button class="btn btn-warning" onclick="addItemToCart('mobile-15', 14599, 'Gellery/mobiles/m-3.png')">Add to Cart</button>
+</div>
+  <div class="product-card" id="16">
+    <img class="product-image" src="Gellery/mobiles/m-2.png" alt="mobile 16">
+    <div class="product-title">mobile 16</div>
+    <div class="product-price">₹19500</div>
+    <button class="btn btn-warning" onclick="addItemToCart('mobile-16', 19500, 'Gellery/mobiles/m-2.png')">Add to Cart</button>
+</div>
+  </div>
+  <h2 class="px-4 me-2">electronic deals</h2>
+  <div class="product-container">
+    <div class="product-card" id="17">
+        <img class="product-image" src="Gellery/electronics/e-21.jpg" alt="Electronics 1">
+        <div class="product-title">Electronics 1</div>
+        <div class="product-price">₹14000</div>
+        <button class="btn btn-warning" onclick="addItemToCart('Electronics-1', 14000, 'Gellery/electronics/e-21.jpg')">Add to Cart</button>
+    </div>
+    <div class="product-card" id="18">
+        <img class="product-image" src="Gellery/electronics/e-19.jpg" alt="Electronics 2">
+        <div class="product-title">Electronics 2</div>
+        <div class="product-price">₹21000</div>
+        <button class="btn btn-warning" onclick="addItemToCart('Electronics-2', 2100, 'Gellery/electronics/e-19.jpg')">Add to Cart</button>
+    </div>
+    <div class="product-card" id="19">
+      <img class="product-image" src="Gellery/electronics/e-25.jpg" alt="Electronics 3">
+      <div class="product-title">Electronics 3</div>
+      <div class="product-price">₹12999</div>
+      <button class="btn btn-warning" onclick="addItemToCart('Electronics-3', 12999, 'Gellery/electronics/e-25.jpg')">Add to Cart</button>
+  </div>
+  <div class="product-card" id="20">
+    <img class="product-image" src="Gellery/electronics/e-16.jpg" alt="Electronics 4">
+    <div class="product-title">Electronics 4</div>
+    <div class="product-price">₹899</div>
+    <button class="btn btn-warning" onclick="addItemToCart('Electronics-4', 899, 'Gellery/electronics/e-16.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="21">
+  <img class="product-image" src="Gellery/electronics/e-20.jpg" alt="Electronics 5">
+  <div class="product-title">Electronics 5</div>
+  <div class="product-price">₹3000</div>
+  <button class="btn btn-warning" onclick="addItemToCart('Electronics-5', 19500, 'Gellery/electronics/e-20.jpg')">Add to Cart</button></div>
+<div class="product-card" id="22">
+  <img class="product-image" src="Gellery/electronics/e-15.jpg" alt="Electronics 6">
+  <div class="product-title">Electronics 6</div>
+  <div class="product-price">₹24999</div>
+  <button class="btn btn-warning" onclick="addItemToCart('Electronics-6', 24999, 'Gellery/electronics/e-15.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="23">
+<img class="product-image" src="Gellery/electronics/e-8.jpg" alt="Electronics 7">
+<div class="product-title">Electronics 7</div>
+<div class="product-price">₹15000</div>
+<button class="btn btn-warning" onclick="addItemToCart('Electronics-7', 15000, 'Gellery/electronics/e-8.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="24">
+<img class="product-image" src="Gellery/electronics/e-22.jpg" alt="Electronics 8">
+<div class="product-title">Electronics 8</div>
+<div class="product-price">₹6999</div>
+<button class="btn btn-warning" onclick="addItemToCart('Electronics-8', 6999, 'Gellery/electronics/e-22.jpg')">Add to Cart</button>
+</div>
+</div>
+<h2 class="px-4 me-2">Top Cloths</h2>
+<div class="product-container">
+  <div class="product-card" id="25">
+      <img class="product-image" src="Gellery/Fashion/c-16.jpg" alt="Product 1">
+      <div class="product-title">Product 1</div>
+      <div class="product-price">₹1299</div>
+      <button class="btn btn-warning" onclick="addItemToCart('product-1', 1299, 'Gellery/Fashion/c-16.jpg')">Add to Cart</button>
+  </div>
+  <div class="product-card" id="26">
+      <img class="product-image" src="Gellery/Fashion/c-17.jpg" alt="Product 2">
+      <div class="product-title">Product 2</div>
+      <div class="product-price">₹1599</div>
+      <button class="btn btn-warning" onclick="addItemToCart('product-2', 1599, 'Gellery/Fashion/c-17.jpg')">Add to Cart</button>
+  </div>
+  <div class="product-card" id="27">
+    <img class="product-image" src="Gellery/Fashion/c-18.jpg" alt="Product 3">
+    <div class="product-title">Product 3</div>
+    <div class="product-price">₹2000</div>
+    <button class="btn btn-warning" onclick="addItemToCart('product-1', 2000, 'Gellery/Fashion/c-18.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="28">
+  <img class="product-image" src="Gellery/Fashion/c-19.jpg" alt="Product 4">
+  <div class="product-title">Product 4</div>
+  <div class="product-price">₹3100</div>
+  <button class="btn btn-warning" onclick="addItemToCart('product-1', 3100, 'Gellery/Fashion/c-19.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="29">
+<img class="product-image" src="Gellery/Fashion/c-35.jpg" alt="Product 5">
+<div class="product-title">Product 5</div>
+<div class="product-price">₹1500</div>
+<button class="btn btn-warning" onclick="addItemToCart('product-1', 1500, 'Gellery/Fashion/c-35.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="30">
+<img class="product-image" src="Gellery/Fashion/c-39.jpg" alt="Product 6">
+<div class="product-title">Product 6</div>
+<div class="product-price">₹1600</div>
+<button class="btn btn-warning" onclick="addItemToCart('product-1', 1600, 'Gellery/Fashion/c-39.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="31">
+<img class="product-image" src="Gellery/Fashion/c-40.jpg" alt="Product 7">
+<div class="product-title">Product 7</div>
+<div class="product-price">₹1700</div>
+<button class="btn btn-warning" onclick="addItemToCart('product-1', 1700, 'Gellery/Fashion/c-40.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="32">
+<img class="product-image" src="Gellery/Fashion/c-38.jpg" alt="Product 8">
+<div class="product-title">Product 8</div>
+<div class="product-price">₹1499</div>
+<button class="btn btn-warning" onclick="addItemToCart('product-8', 1299, 'Gellery/Fashion/c-38.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="33">
+  <img class="product-image" src="Gellery/Fashion/c-27.jpg" alt="Product 9">
+  <div class="product-title">Product 9</div>
+  <div class="product-price">₹1299</div>
+  <button class="btn btn-warning" onclick="addItemToCart('product-9', 1299, 'Gellery/Fashion/c-27.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="34">
+  <img class="product-image" src="Gellery/Fashion/c-19.jpg" alt="Product 10">
+  <div class="product-title">Product 10</div>
+  <div class="product-price">₹2200</div>
+  <button class="btn btn-warning" onclick="addItemToCart('product-10', 2200, 'Gellery/Fashion/c-19.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="35">
+<img class="product-image" src="Gellery/Fashion/c-25.jpg" alt="Product 11">
+<div class="product-title">Product 11</div>
+<div class="product-price">₹2300</div>
+<button class="btn btn-warning" onclick="addItemToCart('product-11', 1299, 'Gellery/Fashion/c-25.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="36">
+<img class="product-image" src="Gellery/Fashion/c-22.jpg" alt="Product 12">
+<div class="product-title">Product 12</div>
+<div class="product-price">₹1200</div>
+<button class="btn btn-warning" onclick="addItemToCart('product-12', 1200, 'Gellery/Fashion/c-22.jpg')">Add to Cart</button>
+</div>
+<div class="product-card" id="37">
+<img class="product-image" src="Gellery/Fashion/c-4.png" alt="Product 13">
+<div class="product-title">Product 13</div>
+<div class="product-price">₹1300</div>
+<button class="btn btn-warning" onclick="addItemToCart('product-13', 1300, 'Gellery/Fashion/c-4.png')">Add to Cart</button>
+</div>
+<div class="product-card" id="38">
+<img class="product-image" src="Gellery/Fashion/c-3.png" alt="Product 14">
+<div class="product-title">Product 14</div>
+<div class="product-price">₹1500</div>
+<button class="btn btn-warning" onclick="addItemToCart('product-14', 1500, 'Gellery/Fashion/c-3.png')">Add to Cart</button>
+</div>
+<div class="product-card" id="39">
+<img class="product-image" src="Gellery/Fashion/c-2.png" alt="Product 15">
+<div class="product-title">Product 15</div>
+<div class="product-price">₹1699</div>
+<button class="btn btn-warning" onclick="addItemToCart('product-15', 1699, 'Gellery/Fashion/c-2.png')">Add to Cart</button>
+</div>
+<div class="product-card" id="40">
+<img class="product-image" src="Gellery/Fashion/c-24.jpg" alt="Product 16">
+<div class="product-title">Product 16</div>
+<div class="product-price">₹1200</div>
+<button class="btn btn-warning" onclick="addItemToCart('product-16', 1299, 'Gellery/Fashion/c-24.jpg')">Add to Cart</button>
+</div>
+</div>
+<div class="small-contaier cart-page" id="cart">
+<h3 class="cart-title">Your Cart</h3>
+<table id="cartTable">
+    <thead>
+        <tr>
+            <th></th>
+            <th>Product</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Total</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- cart products will add here -->
+    </tbody>
+</table>
+
+<div id="cart-summary">
+    <h3 class="cart-title">Cart Summary</h3>
+    <p>Total Items: <span id="totalItems">0</span></p>
+    <p>Total Quantity: <span id="totalQuantity">0</span></p>
+    <p>Total Price: ₹<span id="totalPrice">0.00</span></p>
+</div>
+<div class="cart-btn">
+<button class="check my-2">Check Out</button>
+</div>
+</div>
+<section class="contact" id="contact">
+  <div class="row mx-1">
+    <div class="col">
+       <h2>connect with us</h2>
+       <ul>
+        <li class="my-2"><a href="#">Facebook</a></li>
+        <li class="my-2"><a href="#">Twitter</a></li>
+        <li class="my-2"><a href="#">Instagram</a></li>
+       </ul>
+    </div>
+    <div class="col">
+      <h2>Make Money with Us</h2>
+      <ul>
+       <li class="my-2"><a href="#">Protect and Build Your Brand</a></li>
+       <li class="my-2"><a href="#">Become an Affiliate</a></li>
+       <li class="my-2"><a href="#">Advertise Your Products</a></li>
+       <li class="my-2"><a href="#">Sell under Shop Accelerator</a></li>
+       <li class="my-2"><a href="#">Pay on Merchants</a></li>
+       <li class="my-2"><a href="#"> Advertise Your Products</a></li>
+      </ul>
+    </div>
+    <div class="col">
+        <h2>contact us</h2>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" id="email" name="email" required>
+        </div>  
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>&copy; 2023 Shop. All rights reserved.</p>
+</footer>
+      <script src="script.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

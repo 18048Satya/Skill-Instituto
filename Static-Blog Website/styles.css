@@ -1,0 +1,189 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding:
+  var(--scroll-padding, 5rem );
+
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: aliceblue;
+}
+
+.navbar-brand {
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  background-color: white;
+  color: green;
+}
+
+
+.navbar {
+  background-color: black;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+i {
+  color: aliceblue;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Hero-container {
+  width: 100%;
+  height: 80vh;
+  background-image: url(Gallery/Hero.jpg);
+  background-size: cover;
+  text-align: center;
+  padding: 100px;
+  color: #111;
+  font-size: x-large;
+}
+
+.about {
+  text-align: center;
+  padding: 30px 80px;
+}
+
+.Recent_posts {
+  text-align: center;
+
+}
+
+.posts {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  align-items: center;
+  justify-content: center;
+  margin: 2em;
+}
+
+.post {
+  margin: 5px;
+  max-width: 900px;
+  max-height: auto;
+  text-align: center;
+}
+.post:hover{
+  border: 1px solid #80808029;
+  cursor: pointer;
+}
+
+.img-post {
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+}
+
+.subscribe-container {
+  background-color: #333;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+}
+
+h2 {
+  color: #fff;
+}
+
+p {
+  color: #bdb6b6;
+}
+
+input[type="email"] {
+  width: 30%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.subscribe-button {
+  background-color: rgb(65, 169, 65);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.subscribe-button:hover {
+  background-color: rgb(30, 238, 30);
+}
+
+.container {
+  color: black;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer p {
+  color: #fff;
+  text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .posts {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: center;
+    justify-content: center;
+    margin: 2em;
+  }
+  .overlay {
+    width: 100%;
+    height: 60vh;
+  }
+  .Hero-container{
+    width: 100%;
+    height: 60vh;
+    padding:100px 10px;
+  }
+  .about {
+    padding: 30px 10px;
+  }
+
+}
