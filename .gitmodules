@@ -1,0 +1,3 @@
+[submodule "finance-dashboard"]
+	path = finance-dashboard
+	url = https://github.com/18048Satya/finance-dashboard.git
